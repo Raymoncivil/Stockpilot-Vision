@@ -10,7 +10,7 @@ const { notFound, errorHandler } = require('./middlewares/errorHandler');
 
 // 🔹 IMPORTAR RUTAS
 const stockMovementsRoutes = require('./routes/stockMovements.routes');
-//const stockRoutes = require('./routes/stock.routes');
+const stockRoutes = require('./routes/stock.routes');
 const productsRoutes = require('./routes/products.routes');
 const locationsRoutes = require('./routes/locations.routes');
 
@@ -87,6 +87,6 @@ app.listen(PORT, () => {
   console.log(`   - GET  /db-test`);
   console.log(`   - *    /products`);
   console.log(`   - *    /locations`);
-  //console.log(`   - *    /stock`);
+  console.log(`   - *    /stock`);
   console.log(`   - *    /stock-movements`);
 });
